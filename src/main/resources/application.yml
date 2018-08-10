@@ -1,0 +1,9 @@
+spring.profiles.active: local
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://dbHost:dbPost/dbName?verifyServerCertificate=false&useSSL=true
+    username: db_username
+    driver-class-name: com.mysql.cj.jdbc.Driver
