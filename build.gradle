@@ -31,7 +31,6 @@ ext {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile("org.springframework.boot:spring-boot-starter-data-jpa")
-	compile("org.springframework.boot:spring-boot-starter-data-rest")
 	compile('mysql:mysql-connector-java:8.0.12')
 	compile('javax.xml.bind:jaxb-api')
 	compileOnly 'org.projectlombok:lombok:1.18.2'

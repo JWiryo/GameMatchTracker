@@ -6,6 +6,7 @@ import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.UUID;
 
 @Component
@@ -19,6 +20,7 @@ public class PlayerRequestConverter implements Converter<PlayerRequestDto, Playe
                 .playerUUID(playerUUID)
                 .firstName(source.getFirstName())
                 .lastName(source.getLastName())
+                .joinedDate(LocalDateTime.now(ZoneId.of("Asia/Singapore")))
                 .build();
     }
 

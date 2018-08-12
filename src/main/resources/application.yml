@@ -3,7 +3,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
   datasource:
-    url: jdbc:mysql://dbHost:dbPost/dbName?verifyServerCertificate=false&useSSL=true
+    url: jdbc:mysql://dbHost:dbPort/gameMatchTracker_DB?verifyServerCertificate=false&useSSL=true
     username: db_username
+    password: db_password
     driver-class-name: com.mysql.cj.jdbc.Driver
