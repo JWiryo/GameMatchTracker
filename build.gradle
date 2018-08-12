@@ -36,7 +36,7 @@ dependencies {
 	compile('javax.xml.bind:jaxb-api')
 	compileOnly 'org.projectlombok:lombok:1.18.2'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompileOnly 'org.projectlombok:lombok:1.16.18'
+	testCompileOnly 'org.projectlombok:lombok:1.18.2'
 
 	//	compile('org.springframework.cloud:spring-cloud-starter-aws-jdbc')
 }

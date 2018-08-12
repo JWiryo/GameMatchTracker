@@ -21,6 +21,7 @@
 
 # Build file
 *.gradle
+build/*
 
 # IntelliJ IDEA file
 *.idea
