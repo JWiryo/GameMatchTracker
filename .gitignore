@@ -20,8 +20,9 @@
 *.rar
 
 # Build file
-*.gradle
-build/*
+/.gradle/
+/build/
+/out/
 
 # IntelliJ IDEA file
 *.idea
