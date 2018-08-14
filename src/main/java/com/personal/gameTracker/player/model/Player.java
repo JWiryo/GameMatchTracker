@@ -1,7 +1,9 @@
 package com.personal.gameTracker.player.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -9,23 +11,25 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Players")
 public class Player {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "PlayerID")
-    private Long playerId;
+    protected Long playerId;
 
     @Column(name = "PlayerUUID")
-    private String playerUUID;
+    protected String playerUUID;
 
     @Column(name = "FirstName")
-    private String firstName;
+    protected String firstName;
 
     @Column(name = "LastName")
-    private String lastName;
+    protected String lastName;
 
     @Column(name = "JoinedDate")
-    private LocalDateTime joinedDate;
+    protected LocalDateTime joinedDate;
 }
